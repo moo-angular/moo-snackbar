@@ -1,0 +1,49 @@
+{
+  "name": "moo-snackbar",
+  "version": "1.2.0",
+  "description": "AngularJS Directive Component of the UI-Toolkit's Accordion for Mutual of Omaha's DXD Team",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "export NODE_ENV=development && webpack --devtool=source-map --progress --colors --content-base src",
+    "build": "export NODE_ENV=production && node node_modules/.bin/webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moo-angular/moo-snackbar.git"
+  },
+  "keywords": [
+    "angular",
+    "directive",
+    "accordion",
+    "moo",
+    "mutualofomaha"
+  ],
+  "author": "Sean Larkin <sean.larkin@cuw.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/moo-angular/moo-snackbar/issues"
+  },
+  "homepage": "https://github.com/moo-angular/moo-snackbar#readme",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "css-loader": "^0.23.0",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0"
+  },
+  "devDependencies": {
+    "angular": "^1.4.8",
+    "babel": "^6.1.18",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-syntax-class-properties": "^6.1.18",
+    "babel-plugin-transform-do-expressions": "^6.1.18",
+    "babel-plugin-transform-function-bind": "^6.1.18",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-stage-0": "^6.1.18",
+    "html-loader": "^0.4.0",
+    "jscs": "^2.6.0",
+    "jscs-loader": "^0.2.0",
+    "webpack": "^1.12.9"
+  }
+}

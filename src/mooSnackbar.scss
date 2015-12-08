@@ -1,0 +1,64 @@
+snackbar {
+  display: flex;
+  position: absolute;
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%;
+  min-height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 2px;
+  font-size: 14px;
+  cursor: default;
+  background-color: lightgreen;
+  opacity: .8;
+  height: 100px;
+  z-index: 90px;
+
+  &.bottom {
+    bottom: 0;
+  }
+  
+  &.md-capsule {
+    border-radius: 24px;
+  }
+
+  transform: translate3d(0,0,0) rotateZ(0deg);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  &.ng-leave-active {
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+  &.ng-enter {
+    transform: translate3d(0, 100%, 0);
+    &.top {
+      transform: translate3d(0, -100%, 0);
+    }
+    &.bottom {
+      transform: translate3d(0, 100%, 0);
+    }
+    opacity: 0;
+    &.ng-enter-active {
+      transform: translate3d(0, 0, 0);
+      opacity: .8;
+    }
+  }
+  &.ng-leave.ng-leave-active {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+    &.top {
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+
+  .md-action {
+    line-height: 19px;
+    margin-left: 24px;
+    cursor: pointer;
+    text-transform: uppercase;
+    float: right;
+  }
+}
