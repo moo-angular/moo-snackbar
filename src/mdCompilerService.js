@@ -129,4 +129,4 @@ let mdCompiler = function mdCompilerService($q, $http, $injector, $compile, $con
   };
 }
 
-export default $mdCompiler;
+export default mdCompiler;
