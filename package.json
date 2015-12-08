@@ -1,6 +1,6 @@
 {
   "name": "moo-snackbar",
-  "version": "1.2.0",
+  "version": "1.0.1",
   "description": "AngularJS Directive Component of the UI-Toolkit's Accordion for Mutual of Omaha's DXD Team",
   "main": "dist/index.js",
   "scripts": {

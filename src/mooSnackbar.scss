@@ -12,15 +12,20 @@ snackbar {
   border-radius: 2px;
   font-size: 14px;
   cursor: default;
-  background-color: lightgreen;
+  background-color: #222222;
   opacity: .8;
-  height: 100px;
   z-index: 90px;
+
+  .message {
+    color: #FFFFFF;
+    font-family: sans-serif;
+    margin-bottom: 0;
+  }
 
   &.bottom {
     bottom: 0;
   }
-  
+
   &.md-capsule {
     border-radius: 24px;
   }
