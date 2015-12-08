@@ -1,4 +1,5 @@
 import mdCompilerService from './mdCompilerService';
+import MooSnackbarFactory from './mooSnackbar.service.js';
 
 export default app => {
   app
